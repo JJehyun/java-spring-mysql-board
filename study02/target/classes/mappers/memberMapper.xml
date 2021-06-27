@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.example.mapper.memberMapper">
+    <!-- 
+        mybatis-config.xml의 typeAlias에 등록해두지 않았다면 
+        
+        <select id="selectMember" resultType="com.example.dto.MemberVO" >
+            SELECT ID, PW ,NAME FROM TEST
+        </select>
+        
+        이렇게 해야 한다.
+    -->
+    
+	    <select id="selectMember" resultType="com.spring.mysql.MemberVO">
+	        SELECT * FROM test
+	    </select>
+	     <select id="selectUser" resultType="com.spring.mysql.UserVO">
+	        SELECT * FROM user
+	    </select>
+         <select id="selectmain" resultType="com.spring.mysqltest.TestVO">
+        SELECT * FROM main
+         </select>
+         
+         
+         <insert id="insertTest" parameterType="com.spring.insertTest.TestinserVO">
+         insert into test (id,pw,name) VALUES (#{id},#{pw},#{name})
+         </insert>
+         
+        <select id="selectLogin" parameterType="String" resultType="String">
+        SELECT useriD FROM main WHERE useriD = #{useriD}
+        </select>
+         
+        <select id="checkpw" parameterType="String" resultType="String">
+        SELECT userPassword FROM main WHERE userPassword = #{userPassword}
+        </select>
+        
+         <insert id="designinsert" parameterType="String">
+         insert into springdesign621 (title,contents,userID,counter,file) VALUES (#{title},#{contents},#{userID},1,#{file})
+         </insert>
+        
+         
+         
+        <select id="designselect" parameterType="int" resultType="com.spring.designinsert.DesignSelectVO">
+			select springdesign621.id,main.userID,main.name,main.file,springdesign621.title,springdesign621.counter,springdesign621.time from main inner join springdesign621 on main.userID = springdesign621.userID ORDER BY springdesign621.id DESC LIMIT #{pagingint},5;
+		</select>
+         
+         
+        <select id="designuserprofile" parameterType="String" resultType="com.spring.designinsert.DesignUserProfile">
+        select userID,name,file,Email from main where userID = #{userID};
+        </select>
+        
+        
+        <select id="joindesigndetail" parameterType="int" resultType="com.spring.designinsert.DesignUserProfile">
+        select main.userID,main.name,main.file from main INNER JOIN springdesign621 ON main.userID = springdesign621.userID where springdesign621.id = #{springdesign621.id};
+        </select>
+         
+         
+       <select id="designdetailtop" resultType="com.spring.designinsert.DesignDetailtopVO">
+        SELECT id,title,userID,counter,time FROM springdesign621 ORDER BY id DESC LIMIT 0,4;
+        </select>
+         
+         
+        <select id="DesignDetailMain" parameterType="int" resultType="com.spring.designinsert.DesignDetailMainVO">
+        select * from springdesign621 where id = #{id}
+        </select>
+        
+        <select id="counterdesignboard" resultType="int">
+        select count(*) from springdesign621;
+        </select>
+        
+        <select id="Searchtext" parameterType="map" resultType="com.spring.designinsert.SearchTextVO">
+			select springdesign621.id,main.userID,main.name,main.file,springdesign621.title,springdesign621.counter,springdesign621.time from main inner join springdesign621 on main.userID = springdesign621.userID  AND springdesign621.title LIKE #{b} ORDER BY springdesign621.id DESC LIMIT #{pagingint},5;
+        </select>
+        
+        
+        <select id="searchcounter" parameterType="String" resultType="int">
+        select count(*) from springdesign621 where title like #{a}
+        </select>
+        
+        <select id="MainDesignSelect" resultType="com.spring.designinsert.MainDesignVO">
+		SELECT id,title,userID,counter FROM springdesign621 ORDER BY id DESC LIMIT 0,3;
+        </select>
+        
+        <select id="JavaBoardSelect" parameterType="int" resultType="com.spring.javaboard.JavaBoardVO">
+		select * from springjava621 ORDER BY id DESC LIMIT ${first},${two};
+        </select>
+        
+        
+         <insert id="JAVAMEMOinsert" parameterType="String">
+         insert into springjavamemo621(contents,userID) VALUES (#{contents},#{userID})
+         </insert>
+        
+        <select id="javamemoselect" resultType="com.spring.javaboard.JavaBoardVO">
+		select * from springjavamemo621 ORDER BY id DESC;
+        </select>
+        
+        <delete id="deletejavaMemo" parameterType="int">
+         delete from springjavamemo621 where id = #{id} 
+         </delete>
+
+
+         <insert id="springjava621" parameterType="String">
+         insert into springjava621(title,contents,userID,file,counter,good) VALUES (#{title},#{contents},#{userID},#{file},1,0)
+         </insert>
+         
+         
+        <select id="JavaBoardCounter" resultType="int">
+		select count(*) from springjava621;
+        </select>
+        
+        
+        <select id="JavaBoardSearchDAO" parameterType="String" resultType="com.spring.javaboard.JavaBoardVO">
+		select * from springjava621 WHERE title LIKE "${text}" ORDER BY id DESC LIMIT ${first},${two};
+        </select>
+        
+        
+        
+        <select id="JavaBoardsearch" parameterType="String" resultType="int">
+		select count(*) from springjava621 WHERE title LIKE #{test};
+        </select>        
+        
+        
+        <select id="Javadetailtop" resultType="com.spring.javaboard.JavaBoardTOPVO">
+		select title,time,userID,counter from springjava621 ORDER BY id DESC LIMIT 0,4
+        </select>  
+
+
+        <select id="javadetailmain" parameterType="int" resultType="com.spring.javaboard.JavaBoardDetailVO">
+		select springjava621.id,springjava621.title,springjava621.contents,springjava621.time,springjava621.userID,springjava621.counter,springjava621.file,main.name,main.age from springjava621 INNER JOIN main ON springjava621.userID = main.userID where springjava621.id = #{asd};        
+		</select>  
+
+
+
+         <select id="mainjavaSELECTA" resultType="com.spring.main.MainJavaVO">
+        	select springjava621.id,springjava621.title,springjava621.contents,springjava621.time,springjava621.userID,springjava621.counter,springjava621.file,main.name,main.age from springjava621 INNER JOIN main ON springjava621.userID = main.userID ORDER BY springjava621.id DESC limit 0,2;
+         </select>
+
+</mapper>
+
