@@ -10,18 +10,19 @@
 <img width="800" height="550" alt="main창" src="https://user-images.githubusercontent.com/86187456/123536864-a8e33d00-d767-11eb-86df-8d50339d5e20.png">
 <center>메인창 mybatis - spring 각 종 게시판 구현(메인창) </center>
 
-이미지 게시판
-<img width="945" alt="이미지 게시판" src="https://user-images.githubusercontent.com/86187456/123536867-ae408780-d767-11eb-8837-7975592894f5.png">
+
+<img width="800" height="550" alt="이미지 게시판" src="https://user-images.githubusercontent.com/86187456/123536867-ae408780-d767-11eb-8837-7975592894f5.png">
+<center>서버에 저장된 이미지 구현, 우측 하단 mybatis - todo list 구현, 크롤링으로 학교 일정 구현</cneter>
 
 이미지 게시판 상세페이지
-<img width="628" alt="자유게시판 상세페이지" src="https://user-images.githubusercontent.com/86187456/123536880-c1535780-d767-11eb-8fc6-f3166fc697c3.png">
+<img width="800" height="550" alt="자유게시판 상세페이지" src="https://user-images.githubusercontent.com/86187456/123536880-c1535780-d767-11eb-8fc6-f3166fc697c3.png">
 
 자바 게시판
-<img width="679" alt="java 게시판" src="https://user-images.githubusercontent.com/86187456/123536890-d0d2a080-d767-11eb-8b73-b8ddf56e4bce.png">
+<img width="800" height="550" alt="java 게시판" src="https://user-images.githubusercontent.com/86187456/123536890-d0d2a080-d767-11eb-8b73-b8ddf56e4bce.png">
 
 자바 게시판 상세페이지
-<img width="649" alt="java 게시판 상세페이지" src="https://user-images.githubusercontent.com/86187456/123536898-d8924500-d767-11eb-9c32-dc01d4a97382.png">
+<img width="800" height="550" alt="java 게시판 상세페이지" src="https://user-images.githubusercontent.com/86187456/123536898-d8924500-d767-11eb-9c32-dc01d4a97382.png">
 
 글쓰기 페이지
-<img width="775" alt="글쓰기 페이지" src="https://user-images.githubusercontent.com/86187456/123536903-de882600-d767-11eb-8c9f-97708964a4bd.png">
+<img width="800" height="550" alt="글쓰기 페이지" src="https://user-images.githubusercontent.com/86187456/123536903-de882600-d767-11eb-8c9f-97708964a4bd.png">
 
