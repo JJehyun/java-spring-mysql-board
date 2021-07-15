@@ -2,12 +2,13 @@
 
 개인 기록 중
 
-로그인 창
-<img width="800" height="550" alt="로그인 창" src="https://user-images.githubusercontent.com/86187456/123536856-a1bc2f00-d767-11eb-88e4-1ef389193481.png">
-<center>mysql - spring 연동해서 로그인 창 구현</center>
 
-메인창
-<img width="958" alt="main창" src="https://user-images.githubusercontent.com/86187456/123536864-a8e33d00-d767-11eb-86df-8d50339d5e20.png">
+<img width="800" height="550" alt="로그인 창" src="https://user-images.githubusercontent.com/86187456/123536856-a1bc2f00-d767-11eb-88e4-1ef389193481.png">
+<center>mysql - spring 연동해서 로그인 창 구현(로그인 창)</center>
+
+
+<img width="800" height="550" alt="main창" src="https://user-images.githubusercontent.com/86187456/123536864-a8e33d00-d767-11eb-86df-8d50339d5e20.png">
+<center>메인창 mybatis - spring 각 종 게시판 구현(메인창) </center>
 
 이미지 게시판
 <img width="945" alt="이미지 게시판" src="https://user-images.githubusercontent.com/86187456/123536867-ae408780-d767-11eb-8837-7975592894f5.png">
