@@ -17,12 +17,12 @@
 <img width="800" height="550" alt="자유게시판 상세페이지" src="https://user-images.githubusercontent.com/86187456/123536880-c1535780-d767-11eb-8fc6-f3166fc697c3.png">
 <center>spring - mysql 상세페이지 구현</cneter>
 
-자바 게시판
+
 <img width="800" height="550" alt="java 게시판" src="https://user-images.githubusercontent.com/86187456/123536890-d0d2a080-d767-11eb-8b73-b8ddf56e4bce.png">
+<center>두번째 게시판</cneter>
 
-자바 게시판 상세페이지
 <img width="800" height="550" alt="java 게시판 상세페이지" src="https://user-images.githubusercontent.com/86187456/123536898-d8924500-d767-11eb-9c32-dc01d4a97382.png">
-
+<center>두번째 게시판 상세 페이지</cneter>
 
 <img width="800" height="550" alt="글쓰기 페이지" src="https://user-images.githubusercontent.com/86187456/123536903-de882600-d767-11eb-8c9f-97708964a4bd.png">
 <center>네이버 api를 이용한 글쓰기 form 구현 mybatis insert</cneter>
