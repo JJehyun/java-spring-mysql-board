@@ -3,7 +3,7 @@
 개인 기록 중
 
 로그인 창
-<img width="800" height="700" alt="로그인 창" src="https://user-images.githubusercontent.com/86187456/123536856-a1bc2f00-d767-11eb-88e4-1ef389193481.png">
+<img width="800" height="550" alt="로그인 창" src="https://user-images.githubusercontent.com/86187456/123536856-a1bc2f00-d767-11eb-88e4-1ef389193481.png">
 
 메인창
 <img width="958" alt="main창" src="https://user-images.githubusercontent.com/86187456/123536864-a8e33d00-d767-11eb-86df-8d50339d5e20.png">
