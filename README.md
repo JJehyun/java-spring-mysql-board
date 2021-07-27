@@ -26,3 +26,6 @@
 
 <img width="800" height="550" alt="글쓰기 페이지" src="https://user-images.githubusercontent.com/86187456/123536903-de882600-d767-11eb-8c9f-97708964a4bd.png">
 <center>네이버 api를 이용한 글쓰기 form 구현 mybatis insert</cneter>
+
+<img width="800" height="550" alt="20210727142738" src="https://user-images.githubusercontent.com/86187456/127119205-063cade1-72b1-4119-a94b-409f064689ae.png">
+<center>회원가입 </cneter>
